@@ -3,7 +3,7 @@ LABEL maintainer="Tim Kolotov <timophey.kolotov@gmail.com>"
 
 # Install all dependencies and building tools
 RUN apt-get -y update && apt-get -y install --no-install-recommends wget cmake python3.6-dev python3-numpy gcc \
-    g++ libgstreamer-plugins-base1.0-dev libjpeg-turbo8-dev gstreamer1.0-libav gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
+    g++ libgstreamer-plugins-base1.0-dev libjpeg-turbo8-dev gstreamer1.0-libav gstreamer1.0-plugins-good gstreamer1.0-plugins-bad \
     && apt-mark manual python3.6 python3-numpy libgstreamer-plugins-base1.0-0 libjpeg-turbo8 \
 # Download an unpack opencv
     && wget --no-check-certificate https://github.com/opencv/opencv/archive/3.4.2.tar.gz \
